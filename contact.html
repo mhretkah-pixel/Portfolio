@@ -10,40 +10,63 @@
   <header>
     <h1>Contact Me</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a> | 
+      <a href="about.html">About Me</a> | 
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <hr>
 
   <main>
     <section>
       <h2>Get in Touch</h2>
-      <p>If you want to reach out, here is my contact information:</p>
+      <p>Have a question or want to collaborate? Fill out the form below!</p>
       
-      <address>
+      <form action="#" method="post">
+        <p>
+          <label for="name"><strong>Full Name:</strong></label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+          <label for="years"><strong>Years in Tech/Coding:</strong></label><br>
+          <input type="number" id="years" name="years" value="0" min="0">
+        </p>
+
+        <p>
+          <strong>Preferred Contact Time:</strong><br>
+          <input type="radio" id="morning" name="contact_time" value="morning">
+          <label for="morning">Morning</label>
+          <input type="radio" id="evening" name="contact_time" value="evening" checked>
+          <label for="evening">Evening</label>
+        </p>
+
+        <p>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+          <label for="subscribe">Subscribe to my coding progress updates</label>
+        </p>
+
+        <p>
+          <label for="rating"><strong>Rate my portfolio structure (1 to 10):</strong></label><br>
+          <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+        </p>
+
+        <p>
+          <input type="submit" value="Submit Form">
+          <input type="reset" value="Clear Entries">
+        </p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Connect on Social Media</h2>
+      <p>
         <strong>Phone:</strong> +251923459452 <br>
         <strong>Telegram:</strong> <a href="https://t.me/bett7778" target="_blank">@bett7778</a> <br>
         <strong>GitHub:</strong> <a href="https://github.com/mhretkah-pixel" target="_blank">mhretkah-pixel</a> <br>
         <strong>Location:</strong> Addis Ababa, Ethiopia
-      </address>
-
-      <br>
-      <h2>Send a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <input type="text" id="message" name="message" placeholder="Write your message here"><br><br>
-
-        <input type="submit" value="Send Message">
-      </form>
+      </p>
     </section>
   </main>
 
